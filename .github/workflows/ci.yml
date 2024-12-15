@@ -10,8 +10,10 @@ jobs:
   generate-docs:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: lirlia/tbls-spanner
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Execute tbls-spanner
+        uses: lirlia/tbls-spanner
         with:
           ddl_path: './spanner.sql'
 
