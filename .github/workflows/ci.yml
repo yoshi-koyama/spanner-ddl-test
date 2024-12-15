@@ -9,7 +9,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Execute tbls-spanner
-        uses: lirlia/tbls-spanner@v1
+        uses: lirlia/tbls-spanner@v1.1.0
         with:
           ddl_path: './spanner.sql'
       - name: Commit & Push changes
