@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: lirlia/tbls-spanner@latest
+      - uses: lirlia/tbls-spanner
         with:
           ddl_path: './spanner.sql'
 
