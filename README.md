@@ -1,0 +1,1 @@
+# spanner-ddl-test
