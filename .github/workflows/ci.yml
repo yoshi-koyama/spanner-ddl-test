@@ -1,10 +1,6 @@
 name: generate
 on:
   pull_request:
-    types:
-      - opened
-      - edited
-      - synchronize
 
 jobs:
   generate-docs:
@@ -16,7 +12,6 @@ jobs:
         uses: lirlia/tbls-spanner
         with:
           ddl_path: './spanner.sql'
-
       - name: Commit & Push changes
         uses: actions-js/push@master
         with:
